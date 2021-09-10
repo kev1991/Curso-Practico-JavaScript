@@ -5,10 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Figuras geométricas | Curso Práctico de JavaScript en Platzi </title>
+    <link rel="stylesheet" href="./css/figuras.css">
 </head>
 <body>
-    <h1> Figuras Geométricas </h1>
+    <header>
+        <h2 > <span></span> Figuras Geométricas </h2>  
+    </header>
+    <main>
+        
+        <section >
+            <h3> Calcular el área y pertimetro de un cuadrado</h3>
+            <form>
+                <label for="cuadrado"> Escribe cuento mide cada lado de tu cadrado:  </label>
+                <input id="cuadrado" type="number" placeholder="Lado" /> <br/>
 
+                <button type="button" onclick="calcular_perimetro_cuadrado()"> Calcular perimetro </button> <br/>
+                <button type="button" onclick="calcular_area_cuadrado()"> Calcular área </button>
+            </form>
+        </section>
+
+        <section>
+            <h3> Calcular el área y pertimetro de un triángulo</h3>
+            <form for="">
+                <label for="lado1"> Escribe cuento miden los lados de tu triángulo:  </label>
+                <input id="lado1" type="number" placeholder="Lado 1"/> <br/>
+
+                <input id="lado2" type="number" placeholder="Lado 2"/> <br/>
+
+                <input id="base" type="number" placeholder="Base"/> <br/>
+
+                <input id="altura" type="number" placeholder="Altura"/> <br/>
+
+                <button type="button" onclick="calcular_perimetro_triangulo()"> Calcular perimetro </button> <br/>
+                <button type="button" onclick="calcular_area_triangulo()"> Calcular área </button>
+            </form>
+        </section>
+
+        <section>
+            <h3> Calcular el área, pertimetro y el diametro de un circulo</h3> 
+            <form for="">
+                <label for="radio"> Escribe de cuanto es el radio de tu circulo:  </label>
+                <input id="radio" type="number" placeholder="Radio"/> <br/>
+
+                <button type="button" onclick="calcular_perimetro_circulo()"> Calcular perimetro </button> <br/>
+                <button type="button" onclick="calcular_area_circulo()"> Calcular área </button>
+                <button type="button" onclick="calcular_diametro_circulo()"> Calcular diametro </button>
+            </form>
+        </sections>
+
+    </main>    
     <script src="./figuras.js"></script>
 </body>
 </html> 
