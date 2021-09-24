@@ -5,14 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/descuentos.css">
-    <title>Document</title>
+    <title>Porsentajes y descuentos | Curso Práctico de JavaScript en Platzi</title>
 </head>
 <body>
     <header>
         <div>
-            <h1> hhola mma</h1>
+            <h1> bienvenido a nuestra tienda virtual puedes calcular tus descuentos en la sección de abajo</h1>
         </div>
     </header>
+    <h2> Para calcular el descuento de su producto por favor complete los campos </h2>
+    <main class="main">
+        <section class="catalogo">  
+
+            <table class="catalogo_table">
+                <tr>
+                    <td> <span class="tv"></span>  T.V-max</td>
+                    <td> $900</td>
+                </tr>
+                <tr>
+                    <td> <span class="iphon"></span> Iphon 12</td>
+                    <td> $850</td>
+                </tr>
+                <tr>
+                    <td> <span class="nevera"></span> Nevera </td>
+                    <td> $930</td>
+                </tr>
+                <tr>
+                    <td> <span class="pc"></span> Laptop </td>
+                    <td> $550</td>
+                </tr>
+            </table>
+        </section>
+
+
+        <section class="descuento">
+            <form >
+                <label for="InputPrice"> Escribe el precio del producto y el descuento del mismo </label>
+                <input id="InputPrice" type="number"  placeholder="Precio"/>
+
+                <label for="InputDiscount"></label>
+                <input id="InputDiscount" type="number" placeholder="Descuento" />
+
+                <button type="button" onclick="onClickButtonPriceDiscount()">
+                    Calcular el precio con descuento
+                </button>                
+                <p id="ResultP "></p>
+                <p id="ResultP2 "></p>
+            </form>
+
+            <!-- <form>
+                <label for="InputPrice">Escribe el precio de tu producto:</label>
+                <input id="InputPrice" type="number" />
+          
+                <label for="InputDiscount">Escribe el descuento de tu producto:</label>
+                <input id="InputDiscount" type="number" />
+          
+                <button type="button" onclick="onClickButtonPriceDiscount()">
+                  Calcular el precio con descuento
+                </button> -->
+          
+                <p id="ResultP"></p>
+              </form>
+
+
+
+        </section>
+
+       
+    </main>
+
+
     <script src="./descuentos .js"></script>
 </body>
 </html>
